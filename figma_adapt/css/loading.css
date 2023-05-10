@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.loader {
+    width: 200px;
+    height: 20px;
+    border: 1px solid #ddd;
+    position: relative;
+    margin: 50px auto;
+}
+.bar {
+    width: 0%;
+    height: 100%;
+    background-color: #8d19d5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 1s ease-in-out;
+}
+.loader:hover .bar {
+    width: 100%;
+}
+
+
+
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  animation: move 5s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0) translateY(0);
+    background-color: aquamarine;
+  }
+  25% {
+    transform: translateX(calc(100vw - 50px)) translateY(0);
+    background-color: #191cd5;
+  }
+  50% {
+    transform: translateX(calc(100vw - 50px)) translateY(calc(100vh - 50px));
+    background-color: #d519a3;
+  }
+  75% {
+    transform: translateX(0) translateY(calc(100vh - 50px));
+    background-color: #c2d519;
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+
+.link {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+  }
+  .link1 {
+    color: red;
+  }
+  .link2 {
+   color: aqua;
+  }
+  .link3 {
+    color: yellow;
+  }
+  .link:hover {
+    background-color: rgb(37, 37, 37);
+    display: inline-block;
+    margin-right: 20px;
+  }
+      /* Стили для часов */
+      .clock {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #eee;
+        position: relative;
+        margin: 50px auto;
+      }
+      .hand {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 2px;
+        height: 80px;
+        background-color: red;
+        transform-origin: top;
+        animation: none;
+      }
+
+      /* Анимация для вращения стрелки по часовой стрелке */
+      @keyframes clockwise {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Анимация для вращения стрелки против часовой стрелки */
+      @keyframes counterclockwise {
+        0% {
+          transform: rotate(360deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+.link:hover ~ .clock .hand{
+    animation: clockwise 1s linear forwards;
+}
+.clock:hover .hand{
+    animation: counterclockwise 60s linear infinite;
+}
