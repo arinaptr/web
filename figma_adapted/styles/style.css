@@ -1,0 +1,457 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.lefthead {
+  position: relative;
+  width: 20%;
+}
+
+.lefthead img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+
+.lefthead p {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: transparent;
+}
+
+
+nav ul {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+nav li {
+  list-style: none;
+  margin-top: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+}
+
+nav a:hover {
+  color: #2d74ff;
+  border-bottom: 1px solid #2d74ff;
+}
+
+
+.getStarted button {
+  font-size: 15px;
+  color: white;
+  padding: 15px 25px;
+  background-color: #2d74ff;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin: 0 auto;
+}
+
+.secondpage {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid grey;
+  width: 90%;
+  margin-top: 150px;
+  margin: 0 auto;
+}
+
+.secondpage-left {
+  width: 50%;
+  margin-top: 100px;
+}
+.secondpage-right {
+  width: 55%; 
+}
+
+.business {
+  color: #2d74ff; 
+  margin: 10px 0;
+}
+
+.secondpage-left h1 {
+  color: #000;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.secondpage-left h1 span {
+  color: #2d74ff; 
+}
+
+.secondpage-left .secondPageLeftContent {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+} 
+
+.secondpage-left div img {
+  height: 50px; /* Задаем высоту изображения */
+  margin-right: 10px; /* Добавляем небольшой отступ справа */
+} 
+
+.play {
+  width: 70%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.secondpage-right{
+  height: 350px;
+  width: 35%;
+  background: url('../assets/2.png') no-repeat center/cover; 
+  background-size:contain;
+}
+
+.thirdPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  width: 90%;
+  border-bottom: 1px solid grey;
+}
+
+.thirdPage .left {
+  width: 30%;
+  margin-top: 5%;
+  margin-left: 40px;
+}
+
+.left p {
+  margin: 10px 0;
+}
+
+.left h2 {
+  font-size: 35px;
+}
+
+.left p:nth-child(1) {
+  color: #2d74ff; 
+}
+
+.thirdPage .right {
+  background: url('../assets/1.png') no-repeat center/cover;
+  background-size:contain;
+  width: 58%;
+  height: 400px;
+}
+
+.left button {
+  font-size: 15px;
+  color: white;
+  padding: 15px 25px;
+  background-color: #2d74ff;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin: 10px 0;
+}
+
+.fourthPage {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+width: 90%;
+margin: 0 auto;
+margin-top: 60px;
+border-bottom: 1px solid grey;
+}
+
+.fourthPage h2 {
+text-align: center;
+width: 100%;
+}
+
+.fourthPage div {
+flex: 1;
+margin: 20px;
+text-align: center;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+padding: 20px;
+}
+
+.fourthPage div .title{
+font-size: 20px;
+}
+
+.fourthPage div p{
+padding: 5px;
+background-color: transparent;
+font-size: 15px;
+}
+
+.fourthPage div img {
+display: block;
+margin: 0 auto;
+max-width: 100%;
+height: auto;
+}
+
+.fourthPage div .img-container {
+display: inline-block;
+overflow: hidden;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+background-color: #f8f8f8;
+margin-bottom: 20px;
+border: none;
+}
+
+.fourthPage div .img-container img {
+display: block;
+margin: 0 auto;
+max-width: 100%;
+height: auto;
+}
+
+.fifthPage {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+margin-top: 60px;
+width: 90%;
+}
+
+.header-container {
+display: flex;
+align-items: center;
+justify-content: left; 
+width: 100%;
+position: relative;
+}
+
+.arrow-buttons {
+display: flex;
+align-items: center;
+margin-left: 25%;
+}
+
+.fifthPage h2 {
+text-align: left; /* aligns the text to the left */
+width: 50%; /* adjusts the width of the element */
+margin: 0; /* removes default margin */
+position: relative; /* allows absolute positioning of the line */
+}
+
+.fifthPage .header-container .line {
+  margin: 0.4rem 1.4rem 0rem 0rem;
+  width: 10%;
+  height: 1px;
+  background-color: rgba(45, 116, 255, 0.5);
+  box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.0299999993);
+  flex-shrink: 0;
+}
+
+.arrow-left, .arrow-right {
+margin: 0 10px; /* adds spacing between the arrow buttons */
+width: 40px;
+height: 40px;
+outline: none;
+border: none;
+border-radius: 50%;
+background-color: white;
+
+}
+
+.arrow-left p, .arrow-right p {
+width: 40px;
+height: 40px;
+font-size: 27px;
+color: blue;
+border-radius: 50%;
+background-color: white;
+}
+
+.fifthPage .fifthPage-block {
+flex: 1;
+margin: 20px;
+text-align: left;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+border: 1px solid #ccc;
+padding: 50px;
+position: relative;
+}
+
+.fifthPage .fifthPage-block .fpageimg {
+position: absolute;
+top: 10%;
+left: 10%;
+width: 10px;
+height: auto;
+}
+
+.fifthPage .fifthPage-block p {
+background-color: transparent;
+font-size: 15px;
+margin: 20px 20px 10px 20px;
+}
+
+.fifthPage .fifthPage-block .customer-photo {
+display: inline-block;
+border-radius: 50%;
+overflow: hidden;
+margin-top: 10px;
+margin-left: 20px;
+}
+.customer-photo img {
+width: 50px;
+height: 50px;
+}
+
+.fifthPage .fifthPage-block .customer-details {
+display: inline-block;
+margin-left: 20px;
+vertical-align: top;
+background-color: #fff;
+}
+
+.fifthPage .fifthPage-block .customer-details p {
+margin: 5px 0;
+font-size: 14px;
+}
+
+.sixthPage {
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+margin-top: 60px;
+width: 90%;
+}
+
+.sixthPage-block {
+background-color: #fff;
+border-radius: 10px;
+padding: 30px;
+width: 100%;
+text-align: center;
+margin: 0 15px 0 15px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+border: 1px solid #ccc;
+}
+
+.sixthPage-block h2 {
+background-color: #fff;
+font-size: 30px;
+margin: 10px;
+}
+
+.sixthPage-block p {
+background-color: #fff;
+font-size: 16px;
+margin: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30%;
+  border: 1px solid #2d74ff;
+  border-radius: 6px;
+}
+
+form input {
+padding: 10px;
+margin-right: 10px;
+border-radius: 5px;
+border: none;
+width: 70%;
+}
+
+form button {
+background-color: #2d74ff;
+color: #fff;
+padding: 10px 20px;
+border-radius: 5px;
+border: none;
+cursor: pointer;
+margin-left: auto;
+}
+
+footer {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+padding: 20px;
+background-color: #f8f8f8;
+margin: 50px auto 50px auto;
+}
+
+.footer-name {
+display: flex;
+position: relative;
+width: 30%;
+}
+
+.footer-name img {
+width: 40px;
+height: 40px;
+position: absolute;
+
+}
+
+.footer-name p:first-of-type {
+position: absolute;
+top: 15px;
+left: 15px;
+background-color: transparent;
+}
+
+.footer-name p:nth-of-type(2) {
+position: absolute;
+top: 45px; /* equal to the height of the first p element plus any margin or padding */
+left: 15px;
+background-color: transparent;
+}
+
+.home,
+.pages,
+.contacts {
+margin-left: 10%;
+width: 23%;
+}
+
+.contacts .media img {
+width: 30px;
+height: 30px;
+margin-right: 10px;
+margin-top: 10px;
+}
+
+.home p,
+.pages p,
+.contacts p {
+margin-top: 10px;
+}

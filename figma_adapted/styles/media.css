@@ -1,0 +1,233 @@
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    header {
+        flex-wrap: wrap;
+      }
+      
+      .lefthead {
+        width: 100%;
+      }
+      
+      nav ul {
+        margin-top: 50px;
+      }
+      
+      .getStarted {
+        margin: 10px auto;
+      }
+      nav a:hover
+      {
+        border-bottom: none;
+      }
+      .secondpage {
+        padding: 0px auto;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid grey;
+        width: 90%;
+        margin: 0px auto 0px auto;
+      }
+    .secondpage-left {
+        width: 100%;
+        margin-top: 0px;
+      }
+    .secondpage-right {
+        display: none; 
+      }
+      
+    .business {
+          text-align: center;
+        }
+      
+    .secondpage-left h1 {
+        text-align: center;
+      }
+    .play {
+      justify-content: flex-end;
+      }
+      .secondpage-left .secondPageLeftContent{
+        display: flex;
+        justify-content: center;
+      }
+
+      .thirdPage {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 0 auto;
+        width: 100%;
+        border-bottom: 1px solid grey;
+      }
+      
+      .thirdPage .left {
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+      }
+
+      .thirdPage .right {
+        background: url('../assets/1.png') no-repeat center/cover;
+        width: 100%;
+        height: 400px;
+      }
+      .fourthPage {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+        border-bottom: 1px solid grey;
+        }
+        form {
+            margin: 0 auto;
+          }
+          .footer-name{
+            display: none;
+          } 
+          .home, .pages{
+            font-size: 12px;
+            margin-left: 0px;
+            width: 20%;
+            
+          }
+          .pages{
+            margin-left: 30px;
+          }
+          .contacts{
+            font-size: 12px;
+            width: 40%;
+          }
+          .media{
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .media img{
+            width: 50%;
+            height: auto;
+            margin-right: 0px;
+            margin-top: 0px;
+          }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 960px) {
+    header {
+        flex-wrap: wrap;
+      }
+      
+      .lefthead {
+        width: 100%;
+      }
+      
+      nav ul {
+        margin-top: 50px;
+      }
+      
+      .getStarted {
+        margin: 10px auto;
+      }
+      nav a:hover
+      {
+        border-bottom: none;
+      }
+      .secondpage {
+        padding: 0px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-bottom: 1px solid grey;
+        width: 90%;
+        margin: 0px auto 0px auto;
+      }
+    .secondpage-left {
+        width: 100%;
+        margin-top: 0px;
+      }
+    .secondpage-right {
+        width: 100%;
+        height: 400px;
+        background-size:contain;
+      }
+      
+    .business {
+          text-align: center;
+        }
+      
+    .secondpage-left h1 {
+        text-align: center;
+      }
+    .play {
+      justify-content: flex-end;
+      }
+      .secondpage-left .secondPageLeftContent{
+        display: flex;
+        justify-content: center;
+      }
+      .thirdPage {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 0 auto;
+        width: 100%;
+        border-bottom: 1px solid grey;
+      }
+      
+      .thirdPage .left {
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+      }
+
+      .thirdPage .right {
+        background: url('../assets/1.png') no-repeat center/cover;
+        width: 100%;
+        height: 400px;
+      }
+      form {
+        margin: 0 auto;
+      }
+      .footer-name{
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      .footer-name p:first-of-type{
+        width: 100%;
+      }
+      .footer-name p:nth-of-type(2){
+        display: none;
+      } 
+      .home, .pages{
+        font-size: 12px;
+        margin-left: 0px;
+        width: 20%;
+        
+      }
+      .pages{
+        margin-left: 30px;
+      }
+      .contacts{
+        font-size: 12px;
+        width: 40%;
+      }
+      .media{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .media img{
+        width: 50%;
+        height: auto;
+        margin-right: 0px;
+        margin-top: 0px;
+      }
+}
+
+@media only screen and (min-width: 960px) {
+}
