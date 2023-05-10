@@ -1,0 +1,466 @@
+::after,
+::before {
+	margin:0;
+	padding: 0;
+	box-sizing:border-box;
+}
+ .button {
+          padding: 12px 24px;
+          cursor: pointer;
+          background-color: transparent;
+          
+          font-size: 20px;
+          border: 0;
+          outline: 0;
+          border-radius: 0;
+          position: relative;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+        ul li a {
+            display: flex;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 23px;
+            margin-right: 50px;
+            font-size: 60px;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.7);
+            z-index: 5;
+            transition: 0.3s;
+        }
+
+        ul li a::after {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            border-radius: 23px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            z-index: -1;
+            transition: 0.3s;
+        }
+        ul li a:hover {
+            transform: rotate(-15deg);
+        }
+        ul li a:hover::before {
+            transform: rotate(15deg);
+        }
+
+        ul li a::before {
+            content: " ";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: #0c4f32;
+            right: -5px;
+            bottom: 0;
+            border-radius: 23px;
+            z-index: -1;
+            transform-origin: 100% 100%;
+	          transform: rotate(10deg);
+            transition: 0.3s;
+        }
+
+        ul li:nth-child(2) a::before {
+            background: #0c4f4f;
+        }
+        
+        ul li:nth-child(3) a::before {
+            background: #19567c;
+        }
+        ul li:nth-child(4) a::before {
+            background: #172d6d;
+        }
+        ul li:nth-child(5) a::before {
+            background: #261363;
+        }
+        ul li:nth-child(6) a::before {
+            background: #320654;
+        }
+        ul li:nth-child(7) a::before {
+            background: #59175b;
+        }
+body
+{
+	background-size: cover;
+	font-family: "Courier New", Courier, monoplace;
+	font-size: 16 px;
+	line-height: 1.2;
+	background-color: #1a1d3a;
+}
+.header {
+	padding: 20px 0;
+	margin-bottom: 48 px;
+}
+.filter
+{
+	display: flex;
+	justify-content: center;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.button last-child
+{
+	margin-right: 0;
+}
+.button: active
+{
+	bottom: -1px;
+}
+.button_type_all {
+	background-color: transparent;
+}
+.button_type_pprs{
+	background-color: transparent;
+}
+.button_type_ters{
+	background-color: transparent;
+}
+.button_type_pms{
+	background-color: transparent;
+}
+.button_type_poit{
+	background-color: transparent;
+}
+.button_type_evs{
+	background-color: transparent;
+}
+.button_type_mintis{
+	background-color: transparent;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1024px;
+	margin: 0 auto;
+	font-size: 0;
+}
+ .translate
+{
+  transition: 0.5s;
+  transform: translateY(100px);
+}
+
+.translate:hover
+{
+  transform: translateY(0px);
+  opasity: 1;
+}
+.card
+{
+	position: relative;
+	width: 290px;
+	margin: 20px;
+	height: 100 px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	overflow: hidden;
+	transition: 0.5s all;
+	line-height: 20px;
+	box-shadow: 20 px 20px 50px rgba(0,0,0,0.5);
+	border-radius: 15px;
+	background: rgba(0, 0, 0, 0.3);
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(20px);
+}
+.card h2
+{
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: -60px;
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+  line-height: 5px;
+  position: relative;
+}
+
+.card h3
+{
+  font-size: 25px;
+  color: #fff;
+  z-index:1;
+  margin: 1em;
+}
+
+.card p
+{
+  font-size: 1em;
+  margin: 1em;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 50;
+}
+.card a
+{
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0.2px 8px rgba(0,0,0,0.2);
+  margin-bottom: 15px;
+}
+
+.anime{
+	transform: scale(0);
+	opasity: 0;
+}
+
+.hide{
+	animation-name: hide;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+ @keyframes hide {
+	 0% {
+		 visibility: hidden;
+		 height: 200px;
+	 }
+	 100% {
+		 visibility: hidden;
+		 height: 200px;
+		 margin: 0;
+		 max-width: 0;
+		 font-size: 0;
+	 }
+ }
+
+
+.buttn{
+    --line_color : #beebe4 ;
+    --back_color : rgba(57, 49, 158, 0.5) ; 
+    position : relative ;
+    z-index : 0 ;
+    width : 200px ;
+    height : 56px ;
+    text-decoration : none ;
+    font-size : 14px ; 
+    font-weight : bold ;
+    color : var(--line_color) ;
+    letter-spacing : 2px ;
+    transition : all .3s ease ;
+}
+.button__text{
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    width : 100% ;
+    height : 100% ;
+}
+.buttn::before,
+.buttn::after,
+.button__text::before,
+.button__text::after{
+    content : '' ;
+    position : absolute ;
+    height : 3px ;
+    border-radius : 2px ;
+    background : var(--line_color) ;
+    transition : all .5s ease ;
+}
+.buttn::before{
+    top : 0 ;
+    left : 54px ;
+    width : calc( 100% - 56px * 2 - 16px ) ;
+}
+.buttn::after{
+    top : 0 ;
+    right : 54px ;
+    width : 8px ;
+}
+.button__text::before{
+    bottom : 0 ;
+    right : 54px ;
+    width : calc( 100% - 56px * 2 - 16px ) ;
+}
+.button__text::after{
+    bottom : 0 ;
+    left : 54px ;
+    width : 8px ;
+}
+.button__line{
+    position : absolute ;
+    top : 0 ;
+    width : 56px ;
+    height : 100% ;
+    overflow : hidden ;
+}
+.button__line::before{
+    content : '' ;
+    position : absolute ;
+    top : 0 ;
+    width : 150% ;
+    height : 100% ;
+    box-sizing : border-box ;
+    border-radius : 300px ;
+    border : solid 3px var(--line_color) ;
+}
+.button__line:nth-child(1),
+.button__line:nth-child(1)::before{
+    left : 0 ;
+}
+.button__line:nth-child(2),
+.button__line:nth-child(2)::before{
+    right : 0 ;
+}
+.buttn:hover{
+    letter-spacing : 6px ;
+}
+.buttn:hover::before,
+.buttn:hover .button__text::before{
+    width : 8px ;
+}
+.buttn:hover::after,
+.buttn:hover .button__text::after{
+    width : calc( 100% - 56px * 2 - 16px ) ;
+}
+.button__drow1,
+.button__drow2{
+    position : absolute ;
+    z-index : -1 ;
+    border-radius : 16px ;
+    transform-origin : 16px 16px ;
+}
+.button__drow1{
+    top : -16px ;
+    left : 40px ;
+    width : 32px ;
+    height : 0;
+    transform : rotate( 30deg ) ;
+}
+.button__drow2{
+    top : 44px ;
+    left : 77px ;
+    width : 32px ;
+    height : 0 ;
+    transform : rotate(-127deg ) ;
+}
+.button__drow1::before,
+.button__drow1::after,
+.button__drow2::before,
+.button__drow2::after{
+    content : '' ;
+    position : absolute ;
+}
+.button__drow1::before{
+    bottom : 0 ;
+    left : 0 ;
+    width : 0 ;
+    height : 32px ;
+    border-radius : 16px ;
+    transform-origin : 16px 16px ;
+    transform : rotate( -60deg ) ;
+}
+.button__drow1::after{
+    top : -10px ;
+    left : 45px ;
+    width : 0 ;
+    height : 32px ;
+    border-radius : 16px ;
+    transform-origin : 16px 16px ;
+    transform : rotate( 69deg ) ;
+}
+.button__drow2::before{
+    bottom : 0 ;
+    left : 0 ;
+    width : 0 ;
+    height : 32px ;
+    border-radius : 16px ;
+    transform-origin : 16px 16px ;
+    transform : rotate( -146deg ) ;
+}
+.button__drow2::after{
+    bottom : 26px ;
+    left : -40px ;
+    width : 0 ;
+    height : 32px ;
+    border-radius : 16px ;
+    transform-origin : 16px 16px ;
+    transform : rotate( -262deg ) ;
+}
+.button__drow1,
+.button__drow1::before,
+.button__drow1::after,
+.button__drow2,
+.button__drow2::before,
+.button__drow2::after{
+    background : var( --back_color ) ;
+}
+.buttn:hover .button__drow1{
+    animation : drow1 ease-in .06s ;
+    animation-fill-mode : forwards ;
+}
+.buttn:hover .button__drow1::before{
+    animation : drow2 linear .08s .06s ;
+    animation-fill-mode : forwards ;
+}
+.buttn:hover .button__drow1::after{
+    animation : drow3 linear .03s .14s ;
+    animation-fill-mode : forwards ;
+}
+.buttn:hover .button__drow2{
+    animation : drow4 linear .06s .2s ;
+    animation-fill-mode : forwards ;
+}
+.buttn:hover .button__drow2::before{
+    animation : drow3 linear .03s .26s ;
+    animation-fill-mode : forwards ;
+}
+.buttn:hover .button__drow2::after{
+    animation : drow5 linear .06s .32s ;
+    animation-fill-mode : forwards ;
+}
+@keyframes drow1{
+    0%   { height : 0 ; }
+    100% { height : 100px ; }
+}
+@keyframes drow2{
+    0%   { width : 0 ; opacity : 0 ;}
+    10%  { opacity : 0 ;}
+    11%  { opacity : 1 ;}
+    100% { width : 120px ; }
+}
+@keyframes drow3{
+    0%   { width : 0 ; }
+    100% { width : 80px ; }
+}
+@keyframes drow4{
+    0%   { height : 0 ; }
+    100% { height : 120px ; }
+}
+@keyframes drow5{
+    0%   { width : 0 ; }
+    100% { width : 124px ; }
+}
+.cont{
+    width : 100% ;
+    height : 300px ;
+    display : flex ;
+    flex-direction : column ;
+    justify-content : left ;
+    align-items : left ;
+  margin-bottom: -250px;
+}
+

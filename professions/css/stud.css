@@ -1,0 +1,121 @@
+html { overflow:  hidden; }
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Verdana, sans-serif;
+  font-size: 100%;
+  text-align: center;
+  width: 800px;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 1em;
+   
+}
+h1
+{
+	font-family: Optima, sans-serif; 
+	font-size: 24px; 
+	font-style: italic;
+	font-variant: small-caps; 
+	font-weight: 700; 
+	line-height: 26.4px;
+	text-shadow: 0 0 30px #000000;
+	-webkit-text-stroke: 1.4px #000000; 
+	
+}
+h3.question
+{
+	color: rgba(235, 182, 213, 0.8);
+	font-family: Optima, sans-serif; 
+	font-variant: small-caps; 
+    font-size: 30px;
+	-webkit-text-stroke: 1px #000000; 
+}
+.info
+{
+  font-size: 1.5em;
+}
+.answer
+{
+  background-color: rgba(113, 66, 148, 0.81);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 60%;
+  font-size: 1.5em;
+  margin: 10px auto 0;
+} 
+.answer:hover
+{
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translteY(-0.1rem);
+  transition: transform 150%;
+  background-color: rgba(44, 5, 67, 0.8);
+}
+.answer.selected{
+  background-color: rgba(44, 5, 67, 0.8);
+}
+.finish{
+  background-color: rgba(67, 40, 88, 0.8);
+  color: white;
+  border-radius: 10px;
+  padding: .5em;
+  text-align: center;
+  width: 60%;
+  font-size: 1.5em;
+  margin: 10px auto 0;
+}
+.finish:hover {
+	background-color: rgba(46, 27, 60, 0.8);
+	cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(136, 83, 178, 0.5);
+    transform: translteY(-0.1rem);
+    transition: transform 150%;
+}
+.finish.selected{
+  background-color: rgba(46, 27, 60, 0.8);
+}
+
+.button{
+  background-color: rgba(70, 41, 91, 0.81);
+  color: whiite;
+  border-radius: 10px;
+  padding: 10px 5px;
+  text-align: center;
+  cursor: pionter;
+  font-size: 2em;
+}
+.mini.button{
+  margin-top: 10px;
+  display: block;
+  width: 30%;
+  color: rgba(255, 255, 255, 1);
+}
+.next{
+  float:right;
+}
+.previous{
+  float: left;
+}
+.button:hover
+{
+  background-color: #80b7b9;
+}
+.clearfix:before,
+.clearix:after {
+  content: " ";
+  display: table;
+}
+.clearix:after{
+  clear: both;
+}
+.response p{
+  margin: 50px auto;
+  font-size: 3em;
+  color: white;
+}
+.missed.button{
+  color: white;
+}

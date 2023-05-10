@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Учащийся</title>
+
+	<link rel="stylesheet" href="css/stud.css">
+	<link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+	    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+	<script src="scripts/jquery-3.6.1.min.js"></script>
+	<script src="js/st.js" defer></script>
+</head>
+<body style="background-image: url('img/bg_st.jpeg');">
+  <h1 style="color:rgba(235, 182, 213, 0.8);">Какая профессия вам подходит?</h1>
+  <div id="quiz-area">
+    <section class="q-n-a">
+      <h3 class="question">Вам нравится общение с людьми?</h3>
+      <div class="answers">
+        <div class="answer" data-value="1">Нет</div>
+        <div class="answer" data-value="2">Редко</div>
+        <div class="answer" data-value="3">Обычно да</div>
+        <div class="answer" data-value="4">Да</div>
+      </div>
+	  <div class=button-holder clearfix">
+		<div class="previous mini button">Предыдущий</div><div class="next mini button">Следующий</div>
+	  </div>
+      <div class="button-holder">&nbsp;</div>
+    </section>
+    <section class="q-n-a">
+      <h3 class="question">Как вам работа c документацией?</h3>
+      <div class="answers">
+        <div class="answer" data-value="1">Нет</div>
+        <div class="answer" data-value="2">Изредка норм</div>
+        <div class="answer" data-value="3">Иногда прикольно</div>
+        <div class="answer" data-value="4">Обожаю</div>
+      </div>
+	  <div class=button-holder clearfix">
+		<div class="previous mini button">Предыдущий</div><div class="next mini button">Следующий</div>
+	  </div>
+      <div class="button-holder">&nbsp;</div>
+    </section>
+    <section class="q-n-a">
+      <h3 class="question">Нравится программирование?</h3>
+      <div class="answers">
+        <div class="answer" data-value="1">Конечно</div>
+        <div class="answer" data-value="2">Под настроение</div>
+        <div class="answer" data-value="3">Знаю, но не моё</div>
+        <div class="answer" data-value="4">Нет, пожалуйста</div>
+      </div>
+	  <div class=button-holder clearfix">
+		<div class="previous mini button">Предыдущий</div><div class="next mini button">Следующий</div>
+	  </div>
+      <div class="button-holder">&nbsp;</div>
+    </section>
+	<section class="q-n-a">
+      <h3 class="question">Придумывали новую технологию?</h3>
+      <div class="answers">
+        <div class="answer" data-value="1">Часто</div>
+        <div class="answer" data-value="2">Бывает</div>
+        <div class="answer" data-value="3">Какую-то ерунду</div>
+        <div class="answer" data-value="4">А?нет</div>
+      </div>
+	  <div class=button-holder clearfix">
+		<div class="previous mini button">Предыдущий</div><div class="next mini button">Следующий</div>
+	  </div>
+      <div class="button-holder">&nbsp;</div>
+    </section>
+  </div>
+  <div class="finish" style="display: none;">Результат</div>
+  <div class="response"style="display: none;">
+  <p></p>
+  <div class="missed button" style="display: none;">Проверить ответы</div>
+  </div>
+</body>
+</html>
