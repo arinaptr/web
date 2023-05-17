@@ -1,0 +1,425 @@
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    header {
+        background: none;
+        background-color: #234480;
+        flex-wrap: wrap;
+      }
+      
+      .header {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          padding: 2% 10%;
+      }
+      
+      .header-h {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+      
+      .lefthead {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 20px;
+      }
+      
+      nav {
+          font-size: 13px;
+      }
+      .getStarted{
+        margin-top: 15px;
+      }
+            
+      .header-left {
+          color: white;
+          width: 100%;
+        }
+      .header-right {
+          width: 50%; 
+        }
+      
+      .header-left h1{
+        width: 100%;
+          font-size: 25px;
+          line-height: 35px;
+      }
+      
+      .header-left-buttons {
+          display: flex; 
+          justify-content: space-between;
+          align-items: center;
+        } 
+      
+      .secButton button{ 
+          padding: 10px 30px;
+          background-color: white;
+          color: #234480;
+        }
+      
+        .play {
+            margin-top: 15px;
+          margin-left: 50px;
+          width: 70%;
+        }
+
+        .play img{
+            width: 30px;
+        }
+      
+        .sponsor{
+          margin: 50px 0;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+        }
+      
+        .sponsor p {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            font-size: 12px;
+        }
+        
+        .sponsor .paypal,
+        .sponsor .google,
+        .sponsor .dropbox {
+            margin-top: 10px;
+          display: flex;
+          align-items: center;
+          margin-right: 10px; /* Отступ между логотипами */
+        }
+        
+        .sponsor .dropbox img:first-child {
+          width: 30px; /* Задайте желаемую ширину логотипов */
+          height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+        }
+      
+        .sponsor .dropbox img:nth-child(2) {
+          width: 50px; /* Задайте желаемую ширину логотипов */
+          height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+        }
+      
+        .paypal img {
+          width: 70px; /* Задайте желаемую ширину логотипов */
+          height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+        }
+        .google img {
+          width: 50px; /* Задайте желаемую ширину логотипов */
+          height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+        }
+
+        .feature-1{
+            padding: 10% 10% 0 10%;
+        }
+        .feature-1 div{
+            margin: 5px 20px;
+            flex:content;
+          }
+
+        .phone, .trngle{
+           display: none;
+        }
+
+        .feature-phone-right {
+            width: 100%;
+            text-align: center;
+            margin: 0;
+          }
+
+          .feature-phone-right h2 {
+            margin-top: 15px;
+            font-size: 25px;
+            color: black;
+          }
+
+          .s {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+          }
+
+          .s .s-p {
+            margin: 0  auto;
+          }
+
+          .feature-2-head{
+            margin-top: 20px;
+          }
+
+          .feature-2-part{
+            flex:auto; 
+          }
+
+          .feature-2{
+            padding: 10% 15% 0 15%;
+          }
+
+          .feature-jack {
+            padding: 10% 5% 10% 5%;
+          }
+
+          .feature-jack-left {
+            width: 100%;
+            margin: 0;
+          }
+
+          .feature-jack-left h2{
+            width: 100%;
+            font-size: 30px;
+          }
+          
+          #paragraph{
+            width: 100%;
+            font-size: 14px;
+            text-align: left;
+            margin: 25px 0 0 0;
+          }
+
+          .thButton{
+            text-align: right;
+          }
+
+          .feature-jack-right{
+            width: 100%;
+          }
+
+          .work-functions{
+            flex-wrap: wrap;
+          }
+
+          .feature-work-head h2{
+            margin: 20px 0 0 0;
+          }
+
+          .work-function{
+            width: 100%;
+            flex-basis: 100%;
+            margin: 0px;
+          }
+
+          .work-function-t{
+            margin-top: 10px;
+          }
+
+          .review{
+            width: 100%;
+          }
+
+          .feature-3-right{
+            width: 100%;
+          }
+
+          .free-plan, .premium-plan{
+            width: 100%;
+            margin: 40px 0 20px 0;
+            padding: 20px 20px;
+          }
+
+          .tariff{
+            margin-left: 0;
+          }
+
+          .question p{
+            margin-top: 10px;
+          }
+
+          [class^="footer-"] {
+            width: 50%;
+          }
+
+          [class^="footer-"] h3{
+            font-size: 15px;
+          }
+
+
+          [class^="footer-"] p{
+            font-size: 12px;
+          }
+}
+
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 960px) {
+    header {
+        background: none;
+        background-color: #234480;
+        flex-wrap: wrap;
+      }
+      
+      .header {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          padding: 2% 10%;
+      }
+
+      .header-h {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .lefthead {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    nav{
+        font-size: 14px;
+        margin-right: 20px;
+    }
+
+    .header-left {
+        width: 100%;
+      }
+
+    .header-left h1{
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .txt{
+        width: 100%;
+    }
+    .sponsor{
+        justify-content: center;
+    }
+
+    .feature-1 div{
+        margin: 5px 20px;
+        flex:content;
+      }
+
+      .phone{
+        padding-left: 0;
+      }
+
+      .feature-phone{
+        padding: 5% 5% 0 5%;
+        align-items: center;
+      }
+
+      .feature-phone-right h2{
+        font-size: 25px;
+      }
+
+      .feature-phone-right{
+        margin: 0;
+        margin-left: 10px;
+      }
+
+      .s{
+        margin-top: 10px;
+      }
+
+      .feature-2-head{
+        margin-top: 20px;
+      }
+
+      .feature-2-part{
+        flex:auto; 
+      }
+
+      .feature-2{
+        padding: 10% 15% 0 15%;
+      }
+
+
+      .feature-jack {
+        padding: 10% 5% 10% 5%;
+      }
+
+      .feature-jack-left {
+        width: 100%;
+        margin: 0;
+      }
+
+      .feature-jack-left h2{
+        width: 100%;
+        font-size: 30px;
+      }
+
+      #paragraph{
+        width: 100%;
+        font-size: 14px;
+        text-align: left;
+        margin: 25px 0 0 0;
+      }
+
+      .thButton{
+        text-align: right;
+      }
+
+      .feature-jack-right{
+        width: 100%;
+      }
+
+      .work-functions{
+        flex-wrap: wrap;
+      }
+
+      .feature-work{
+        padding: 5% 10%;
+      }
+
+      .feature-work-head h2{
+        margin: 20px 0 0 0;
+      }
+
+      .work-function{
+        width: 50%;
+        flex-basis: 50%;
+        margin: 0px;
+      }
+
+      .work-function-t{
+        margin-top: 10px;
+      }
+
+      .review{
+        width: 100%;
+      }
+
+      .feature-3-right{
+        width: 100%;
+      }
+
+      .free-plan, .premium-plan{
+        width: 100%;
+        margin: 40px 0 20px 0;
+        padding: 20px 20px;
+      }
+
+      .tariff{
+        margin-left: 0;
+      }
+
+      footer{
+        padding: 10px;
+      }
+
+      [class^="footer-"] h3{
+        font-size: 15px;
+      }
+
+      .step
+      {
+        display: none;
+      }
+
+      [class^="footer-"] p{
+        font-size: 12px;
+      }
+}
